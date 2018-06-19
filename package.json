@@ -1,0 +1,13 @@
+{
+  "name": "sentence-end-guard",
+  "main": "./lib/sentence-end-guard",
+  "version": "0.0.0",
+  "description": "For Japanese, watch sentence-end-phrase and warn duplication",
+  "repository": "https://github.com/Nitro-xN/sentence-end-guard.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

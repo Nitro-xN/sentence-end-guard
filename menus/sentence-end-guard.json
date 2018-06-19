@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle sentence-end-guard",
+        "command": "sentence-end-guard:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "sentence-end-guard",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "sentence-end-guard:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

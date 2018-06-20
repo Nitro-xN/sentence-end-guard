@@ -1,5 +1,7 @@
 # sentence-end-guard package
 
-A short description of your package.
+日本語の文章の文末表現の重複を監視するパッケージです。
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![A screenshot of your package](image.png)
+
+警告距離、忠告距離を設定することができます。

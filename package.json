@@ -1,5 +1,5 @@
 {
-  "name": "sentence-end-guard-for-Japanese",
+  "name": "sentence-end-guard",
   "main": "./lib/sentence-end-guard",
   "version": "0.0.0",
   "description": "For Japanese, watch sentence-end-phrase and warn duplication",

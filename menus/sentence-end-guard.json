@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle sentence-end-guard",
-        "command": "sentence-end-guard:toggle"
+        "label": "Enable Sentence End Guard",
+        "command": "sentence-end-guard:enable"
+      },
+      {
+        "label": "Disable Sentence End Guard",
+        "command": "sentence-end-guard:disable"
       }
     ]
   },
@@ -12,11 +16,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "sentence-end-guard",
+          "label": "Sentence End Guard",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "sentence-end-guard:toggle"
+              "label": "Enable",
+              "command": "sentence-end-guard:enable"
+            },
+            {
+              "label": "Disable",
+              "command": "sentence-end-guard:disable"
             }
           ]
         }

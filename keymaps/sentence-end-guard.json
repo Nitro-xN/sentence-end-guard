@@ -1,4 +1,5 @@
 {
-  "atom-workspace": {
+  "atom-workspace atom-text-editor:not([mini])": {
+    "ctrl-j": "sentence-end-guard:analyse-text"
   }
 }

@@ -1,7 +1,8 @@
 [
   {
     "phraseName": "である",
-    "lastIndex": -1
+    "lastIndex": -1,
+    "cautionDistance": 5
   },
   {
     "phraseName": "だった",
@@ -9,6 +10,14 @@
   },
   {
     "phraseName": "だろう",
+    "lastIndex": -1
+  },
+  {
+    "phraseName": "です",
+    "lastIndex": -1
+  },
+  {
+    "phraseName": "ます",
     "lastIndex": -1
   },
   {

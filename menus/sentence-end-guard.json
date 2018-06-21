@@ -2,12 +2,16 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Enable Sentence End Guard",
+        "label": "Enable Sentence End Guard real-time analysis",
         "command": "sentence-end-guard:enable"
       },
       {
-        "label": "Disable Sentence End Guard",
+        "label": "Disable Sentence End Guard real-time analysis",
         "command": "sentence-end-guard:disable"
+      },
+      {
+        "label": "Search duplication of sentence-end",
+        "command": "sentence-end-guard:analyse-text"
       }
     ]
   },
@@ -25,6 +29,10 @@
             {
               "label": "Disable",
               "command": "sentence-end-guard:disable"
+            },
+            {
+              "label": "Search duplication of sentence-end",
+              "command": "sentence-end-guard:analyse-text"
             }
           ]
         }

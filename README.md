@@ -82,3 +82,5 @@ This package observes text contains Japanese language and detect duplication of 
 ## ターゲット表現ごとの警告/注意距離の設定
 
 target.jsonの各オブジェクトに、"warningDistance","cautionDistance"という項目を追加すると設定できます。
+
+![A screenshot of target.json-sample from cdn.rawgit.com](https://cdn.rawgit.com/Nitro-xN/sentence-end-guard/24a17a84/image2.png)

@@ -2,12 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Enable Sentence End Guard real-time analysis",
-        "command": "sentence-end-guard:enable"
+        "label": "Toggle Sentence End Guard real-time analysis",
+        "command": "sentence-end-guard:toggle-real-time-analysis"
       },
       {
-        "label": "Disable Sentence End Guard real-time analysis",
-        "command": "sentence-end-guard:disable"
+        "label": "Toggle Sentence End Guard real-time analysis in current syntax",
+        "command": "toggle-real-time-analysis-in-current-syntax"
       },
       {
         "label": "Search duplication of sentence-end",
@@ -23,12 +23,12 @@
           "label": "Sentence End Guard",
           "submenu": [
             {
-              "label": "Enable",
-              "command": "sentence-end-guard:enable"
+              "label": "Toggle Sentence End Guard real-time analysis",
+              "command": "sentence-end-guard:toggle-real-time-analysis"
             },
             {
-              "label": "Disable",
-              "command": "sentence-end-guard:disable"
+              "label": "Toggle Sentence End Guard real-time analysis in current syntax",
+              "command": "toggle-real-time-analysis-in-current-syntax"
             },
             {
               "label": "Search duplication of sentence-end",

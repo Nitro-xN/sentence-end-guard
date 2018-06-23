@@ -5,11 +5,10 @@
 This package observes text contains Japanese language and detect duplication of sentence-end words you have specified.
 
 ## commands
-
 | Command | Effect | Default key binding |
 |---------|--------|------|
-| `Sentence End Guard: Enable` | Activate real-time analysis ||
-| `Sentence End Guard: Disable` | Inactivate real-time analysis ||
+| `Sentence End Guard: Toggle Real Time Analysis` | Activate or Inactivate real-time analysis ||
+| `Sentence End Guard: Toggle Real Time Analysis In Current Syntax ` | Activate or Inactivate real-time analysis in current editor's syntax ||
 | `Sentence End Guard: Analyse Text` | Search in current tab | `ctrl-j` |
 
 ## config
@@ -27,8 +26,8 @@ This package observes text contains Japanese language and detect duplication of 
 
 | コマンド | 効果 | ショートカットキー |
 |---------|--------|---------------|
-| `Sentence End Guard: Enable` | リアルタイム監視を有効化します ||
-| `Sentence End Guard: Disable` | リアルタイム監視を無効化します ||
+| `Sentence End Guard: Toggle Real Time Analysis` | リアルタイム監視を有効化 / 無効化します ||
+| `Sentence End Guard: Toggle Real Time Analysis In Current Syntax ` | 現在のエディタのシンタックスで、リアルタイム監視を有効化 / 無効化します ||
 | `Sentence End Guard; Analyse Text` | 編集中のタブの文章の文末の重複をすべて指摘します | `ctrl-j` |
 
 ## 設定

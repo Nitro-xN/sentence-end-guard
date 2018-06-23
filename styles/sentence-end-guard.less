@@ -4,5 +4,30 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.sentence-end-guard {
+atom-text-editor .highlights {
+  .highlight.sentence-end-guard .region {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .sentence-end-guard .region{
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .sentence-end-guard .region {
+    border-color: #ccc;
+  }
+
+  .sentence-end-guard.warning .region {
+    background-color: #F6BDC0;
+  }
+
+  .sentence-end-guard.caution .region {
+    background-color: #EEEF88;
+  }
 }

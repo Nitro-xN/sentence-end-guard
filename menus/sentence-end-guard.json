@@ -6,12 +6,12 @@
         "command": "sentence-end-guard:toggle-real-time-analysis"
       },
       {
-        "label": "Toggle Sentence End Guard real-time analysis in current syntax",
-        "command": "toggle-real-time-analysis-in-current-syntax"
+        "label": "Toggle Sentence End Guard real-time analysis in current language",
+        "command": "toggle-real-time-analysis-in-current-language"
       },
       {
-        "label": "Search duplication of sentence-end",
-        "command": "sentence-end-guard:analyse-text"
+        "label": "Analyse entire text in current editor",
+        "command": "sentence-end-guard:analyse-entire-text"
       }
     ]
   },
@@ -23,16 +23,16 @@
           "label": "Sentence End Guard",
           "submenu": [
             {
-              "label": "Toggle Sentence End Guard real-time analysis",
+              "label": "Toggle real-time analysis",
               "command": "sentence-end-guard:toggle-real-time-analysis"
             },
             {
-              "label": "Toggle Sentence End Guard real-time analysis in current syntax",
-              "command": "toggle-real-time-analysis-in-current-syntax"
+              "label": "Toggle real-time analysis in current language",
+              "command": "toggle-real-time-analysis-in-current-language"
             },
             {
-              "label": "Search duplication of sentence-end",
-              "command": "sentence-end-guard:analyse-text"
+              "label": "Analyse entire text in current editor",
+              "command": "sentence-end-guard:analyse-entire-text"
             }
           ]
         }

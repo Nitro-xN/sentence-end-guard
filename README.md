@@ -8,13 +8,13 @@ This package observes text contains Japanese language and detect duplication of 
 | Command | Effect | Default key binding |
 |---------|--------|------|
 | `Sentence End Guard: Toggle Real Time Analysis` | Activate or Inactivate real-time analysis ||
-| `Sentence End Guard: Toggle Real Time Analysis In Current Syntax ` | Activate or Inactivate real-time analysis in current editor's syntax ||
-| `Sentence End Guard: Analyse Text` | Search in current tab | `ctrl-j` |
+| `Sentence End Guard: Toggle Real Time Analysis In Current Language ` | Activate or Inactivate real-time analysis in current editor's syntax ||
+| `Sentence End Guard: Analyse Entire Text` | Search in current tab | `ctrl-j` |
 
 ## config
 ### Specify attention words
 
-> Preferences(`cmd+,`) -> packages -> sentence-end-guard -> View Code -> lib/endPhrase.json
+> Preferences(`cmd-,`) -> packages -> sentence-end-guard -> View Code -> lib/endPhrase.json
 
 # 文末監視パッケージ
 
@@ -22,13 +22,34 @@ This package observes text contains Japanese language and detect duplication of 
 
 警告距離、忠告距離を設定することができます。対象となる文末表現を設定することもできます。
 
+## 使い方
+### リアルタイム解析
+特別な操作を必要としません。初期設定では、すべてのファイルで文末監視を行っています。
+
+注視対象の文末を入力した際、「警告」「注意」「報告」の通知を発します。
+#### 停止 / 再開
+コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Toggle Real Time Analysis`を実行してください。
+
+右クリックのメニューから`Toggle Sentence End Guard real-time analysis`をクリックする、またはメニューバーから`Packages` -> `Sentence End Guard` -> `Toggle real-time analysis`をクリックすることでも有効化/無効化ができます。
+#### 言語ごとの有効化 / 無効化
+コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Toggle Real Time Analysis In Current Language`を実行することで、編集中のファイルの言語に対するリアルタイム解析を有効化/無効化できます。
+
+右クリックのメニューから`Toggle Sentence End Guard real-time analysis in current language`をクリックする、またはメニューバーから`Packages` -> `Sentence End Guard` -> `Toggle real-time analysis in current language`をクリックすることでも有効化/無効化ができます。
+### 全文解析 ( experimental )
+編集中のエディタのテキストの文末をすべて解析します。
+
+#### 使用
+コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Analyse Entire Text`を実行してください。
+
+右クリックのメニューから`Analyse entire text in current editor`をクリックする、またはメニューバーから`Packages` -> `Sentence End Guard` -> `Analyse entire text in current editor`をクリックすることでも実行できます。
+
 ## コマンド
 
 | コマンド | 効果 | ショートカットキー |
 |---------|--------|---------------|
-| `Sentence End Guard: Toggle Real Time Analysis` | リアルタイム監視を有効化 / 無効化します ||
-| `Sentence End Guard: Toggle Real Time Analysis In Current Syntax ` | 現在のエディタのシンタックスで、リアルタイム監視を有効化 / 無効化します ||
-| `Sentence End Guard; Analyse Text` | 編集中のタブの文章の文末の重複をすべて指摘します | `ctrl-j` |
+| `Sentence End Guard: Toggle Real Time Analysis` | リアルタイム監視を有効化/無効化します ||
+| `Sentence End Guard: Toggle Real Time Analysis In Current Language ` | 現在のエディタの言語で、リアルタイム監視を有効化/無効化します ||
+| `Sentence End Guard: Analyse Entire Text` | 編集中のタブの文章の文末の重複をすべて指摘します | `ctrl-j` |
 
 ## 設定
 ### General
@@ -56,6 +77,8 @@ This package observes text contains Japanese language and detect duplication of 
 
 ## 監視の対象となる文末表現の設定
 
-パッケージの設定画面から`View Code`を選び、lib/endPhrase.jsonに表現を追加してください。
+コマンドパレットから`Sentence End Guard: Edit Target Phrase`を実行し、target.jsonを編集してください。`phraseName`の文字数が多い順に上から並んでいない場合、文末表現の感知がうまく動作しない場合があります ( より正確には、文字列"ABC"と文字列"BC"が登録されているとき、文字列"BC"がより上に並んでいると文字列"ABC"は感知されません。 ) 。
 
-* この方式は近いうちに改善します
+## ターゲット表現ごとの警告/注意距離の設定
+
+target.jsonの各オブジェクトに、"warningDistance","cautionDistance"という項目を追加すると設定できます。

@@ -1,5 +1,5 @@
 {
   "atom-workspace atom-text-editor:not([mini])": {
-    "ctrl-j": "sentence-end-guard:analyse-text"
+    "ctrl-j": "sentence-end-guard:analyse-entire-text"
   }
 }

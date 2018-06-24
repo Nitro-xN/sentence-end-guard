@@ -2,7 +2,8 @@
   {
     "phraseName": "である",
     "lastIndex": -1,
-    "cautionDistance": 5
+    "cautionRange": 5,
+    "warningRange": 2
   },
   {
     "phraseName": "だった",

@@ -31,6 +31,7 @@ This package observes text contains Japanese language and detect duplication of 
 コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Toggle Real Time Analysis`を実行してください。
 
 右クリックのメニューから`Toggle Sentence End Guard real-time analysis`をクリックする、またはメニューバーから`Packages` -> `Sentence End Guard` -> `Toggle real-time analysis`をクリックすることでも有効化/無効化ができます。
+
 #### 言語ごとの有効化 / 無効化
 コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Toggle Real Time Analysis In Current Language`を実行することで、編集中のファイルの言語に対するリアルタイム解析を有効化/無効化できます。
 
@@ -81,6 +82,6 @@ This package observes text contains Japanese language and detect duplication of 
 
 ## ターゲット表現ごとの警告/注意距離の設定
 
-target.jsonの各オブジェクトに、"warningDistance","cautionDistance"という項目を追加すると設定できます。
+target.jsonの各オブジェクトに、"warningRange","cautionRange"という項目を追加すると設定できます。
 
 ![A screenshot of target.json-sample from cdn.rawgit.com](https://cdn.rawgit.com/Nitro-xN/sentence-end-guard/24a17a84/image2.png)

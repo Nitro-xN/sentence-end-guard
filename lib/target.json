@@ -1,40 +1,31 @@
 [
   {
     "phraseName": "である",
-    "lastIndex": -1,
     "cautionRange": 5,
     "warningRange": 2
   },
   {
-    "phraseName": "だった",
-    "lastIndex": -1
+    "phraseName": "だった"
   },
   {
-    "phraseName": "だろう",
-    "lastIndex": -1
+    "phraseName": "だろう"
   },
   {
-    "phraseName": "です",
-    "lastIndex": -1
+    "phraseName": "です"
   },
   {
-    "phraseName": "ます",
-    "lastIndex": -1
+    "phraseName": "ます"
   },
   {
-    "phraseName": "る",
-    "lastIndex": -1
+    "phraseName": "る"
   },
   {
-    "phraseName": "だ",
-    "lastIndex": -1
+    "phraseName": "だ"
   },
   {
-    "phraseName": "た",
-    "lastIndex": -1
+    "phraseName": "た"
   },
   {
-    "phraseName": "い",
-    "lastIndex": -1
+    "phraseName": "い"
   }
 ]

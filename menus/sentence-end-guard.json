@@ -33,6 +33,10 @@
             {
               "label": "Analyse entire text in current editor",
               "command": "sentence-end-guard:analyse-entire-text"
+            },
+            {
+              "label": "Edit target phrase",
+              "command": "sentence-end-guard:edit-target-phrase"
             }
           ]
         }

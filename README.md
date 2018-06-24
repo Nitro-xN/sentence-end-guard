@@ -4,14 +4,25 @@
 
 This package observes text contains Japanese language and detect duplication of sentence-end words you have specified.
 
-## commands
+## Installation
+Preference ( `cmd-,` ) -> Install -> Search "Sentence End Guard" -> Install
+
+or run
+
+```bash
+apm install sentence-end-guard
+```
+
+in command line.
+
+## Commands
 | Command | Effect | Default key binding |
 |---------|--------|------|
 | `Sentence End Guard: Toggle Real Time Analysis` | Activate or Inactivate real-time analysis ||
 | `Sentence End Guard: Toggle Real Time Analysis In Current Language ` | Activate or Inactivate real-time analysis in current editor's syntax ||
 | `Sentence End Guard: Analyse Entire Text` | Search in current tab | `ctrl-j` |
 
-## config
+## Config
 ### Specify attention words
 
 > Preferences(`cmd-,`) -> packages -> sentence-end-guard -> View Code -> lib/endPhrase.json
@@ -20,10 +31,20 @@ This package observes text contains Japanese language and detect duplication of 
 
 日本語の文章の文末表現の重複を監視するパッケージです。
 
-警告距離、忠告距離を設定することができます。対象となる文末表現を設定することもできます。
+警告距離、注意距離を設定することができます。対象となる文末表現を設定することもできます。
+
+## インストール
+Preference ( `cmd-,` ) -> Install -> Sentence End Guard で検索 -> Install
+
+![A screenshot of installation](https://cdn.rawgit.com/Nitro-xN/sentence-end-guard/075bf5a6/image3.png)
+
+ターミナルやコマンドプロンプトで以下のコマンドを実行する方法もあります。
+```bash
+apm install sentence-end-guard
+```
 
 ## 使い方
-### リアルタイム解析
+### リアルタイム監視
 特別な操作を必要としません。初期設定では、すべてのファイルで文末監視を行っています。
 
 注視対象の文末を入力した際、「警告」「注意」「報告」の通知を発します。
@@ -33,7 +54,7 @@ This package observes text contains Japanese language and detect duplication of 
 右クリックのメニューから`Toggle Sentence End Guard real-time analysis`をクリックする、またはメニューバーから`Packages` -> `Sentence End Guard` -> `Toggle real-time analysis`をクリックすることでも有効化/無効化ができます。
 
 #### 言語ごとの有効化 / 無効化
-コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Toggle Real Time Analysis In Current Language`を実行することで、編集中のファイルの言語に対するリアルタイム解析を有効化/無効化できます。
+コマンドパレット ( mac:`cmd-shift-p`, win:`ctrl-shift-p` ) から`Sentence End Guard: Toggle Real Time Analysis In Current Language`を実行することで、編集中のファイルの言語に対するリアルタイム監視を有効化/無効化できます。
 
 右クリックのメニューから`Toggle Sentence End Guard real-time analysis in current language`をクリックする、またはメニューバーから`Packages` -> `Sentence End Guard` -> `Toggle real-time analysis in current language`をクリックすることでも有効化/無効化ができます。
 ### 全文解析 ( experimental )

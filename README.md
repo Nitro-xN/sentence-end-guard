@@ -33,6 +33,10 @@ in command line.
 
 警告距離、注意距離を設定することができます。対象となる文末表現を設定することもできます。
 
+詳しい説明は以下にも記載しています。(日本語)
+
+[Atom package "Sentence End Guard ver 0.1.0 " Usage](https://note.mu/nitro_x64/n/n7f6d9dd97076)
+
 ## インストール
 Preference ( `cmd-,` ) -> Install -> Sentence End Guard で検索 -> Install
 
